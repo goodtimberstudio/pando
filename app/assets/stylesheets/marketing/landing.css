@@ -1,10 +1,16 @@
 /* Base styles and variables */
 :root {
-  --font-serif: "Rubik", serif;
+  /* --font-serif: "Rubik", serif;
   --font-sans: "Parkinsans", sans-serif;
   --font-logo: "Rubik", sans-serif;
   --font-writing: "Caveat", cursive;
-  --font-heading: "Rubik", serif;
+  --font-heading: "Rubik", serif; */
+  --font-serif: "Aclonica", serif;
+  /* --font-serif: "Racing Sans One", serif; */
+  --font-sans: "Iansui", sans-serif;
+  --font-logo: "Aclonica", sans-serif;
+  --font-writing: "Iansui", cursive;
+  --font-heading: "Aclonica", serif;
 
   --color-cod-50: #fffcfd;
   --color-cod-100: #f5e9eb;
@@ -53,6 +59,30 @@
   --color-fall-800: #744d2c;
   --color-fall-900: #604127;
   --color-fall-950: #362212;
+
+  --color-sea-50: #f0f9f4;
+  --color-sea-100: #dbf0e3;
+  --color-sea-200: #bae0cb;
+  --color-sea-300: #8cc9ab;
+  --color-sea-400: #5bac86;
+  --color-sea-500: #3a8f6b;
+  --color-sea-600: #297254;
+  --color-sea-700: #215b45;
+  --color-sea-800: #1f513e;
+  --color-sea-900: #183c2f;
+  --color-sea-950: #0c221b;
+
+  --color-sand-50: #f7f4ef;
+  --color-sand-100: #ebe5d6;
+  --color-sand-200: #d9cbaf;
+  --color-sand-300: #c3ab81;
+  --color-sand-400: #b18f5e;
+  --color-sand-500: #a27d50;
+  --color-sand-600: #916946;
+  --color-sand-700: #704d38;
+  --color-sand-800: #5f4234;
+  --color-sand-900: #533a30;
+  --color-sand-950: #2f1e19;
 }
 
 /* Reset and base styles */
@@ -92,11 +122,15 @@ body {
 }
 
 .bg-secondary-50 {
-  background-color: var(--color-pelorous-50);
+  background-color: var(--color-sand-50);
 }
 
 .bg-fall-50 {
   background-color: var(--color-fall-50);
+}
+
+.bg-sand-50 {
+  background-color: var(--color-sand-50);
 }
 
 .font-serif {
@@ -173,27 +207,27 @@ header {
 }
 
 .btn-primary {
-  background-color: var(--color-amaranth-500);
+  background-color: var(--color-sea-500);
   color: white;
   border: none;
   font-weight: 600;
 }
 
 .btn-primary:hover {
-  background-color: var(--color-amaranth-600);
-  box-shadow: 0 0 0 3px rgba(231, 65, 80, 0.2);
+  background-color: var(--color-sea-600);
+  box-shadow: 0 0 0 3px var(--color-sea-200);
 }
 
 .btn-outline {
   background-color: transparent;
   color: black;
-  border: 2px solid var(--color-amaranth-500);
+  border: 2px solid var(--color-sea-500);
   font-weight: 600;
 }
 
 .btn-outline:hover {
-  background-color: rgba(231, 65, 80, 0.05);
-  box-shadow: 0 0 0 3px rgba(231, 65, 80, 0.1);
+  background-color: var(--color-sea-50);
+  box-shadow: 0 0 0 3px var(--color-sea-200);
 }
 
 .btn-link {
@@ -589,7 +623,7 @@ header {
   background-image: linear-gradient(
     to bottom,
     var(--color-cod-50) 50%,
-    var(--color-fall-50) 50%
+    var(--color-sand-50) 50%
   );
   border: none;
   box-shadow: none;
@@ -605,7 +639,7 @@ header {
   height: 0;
   left: 50%;
   top: 50%;
-  border-top: 1px solid var(--color-fall-400);
+  border-top: 1px solid var(--color-sand-400);
   transform: translateX(-50%) rotate(-3deg);
   transform-origin: center;
   z-index: 1;
@@ -629,7 +663,7 @@ header {
   top: calc(50% - 50px);
   background-image: linear-gradient(
     to bottom,
-    var(--color-fall-50) 50%,
+    var(--color-sand-50) 50%,
     var(--color-cod-50) 50%
   );
   border: none;
@@ -646,7 +680,7 @@ header {
   height: 0;
   left: 50%;
   top: 50%;
-  border-top: 1px solid var(--color-fall-400);
+  border-top: 1px solid var(--color-sand-400);
   transform: translateX(-50%) rotate(-3deg);
   transform-origin: center;
   z-index: 1;
