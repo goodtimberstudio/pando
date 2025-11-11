@@ -4,12 +4,12 @@ Rails.application.routes.draw do
     get "/:slug", to: "rooms#show", as: :room_slug
   end
 
-  # Redirect www.smallbets.com to smallbets.com
-  constraints(host: /^www\.smallbets\.com/) do
-    match "(*any)", to: redirect { |params, request|
-      "https://smallbets.com/#{params[:any]}#{request.query_string.present? ? '?' + request.query_string : ''}"
-    }, via: :all
-  end
+  # # Redirect www.smallbets.com to smallbets.com
+  # constraints(host: /^www\.smallbets\.com/) do
+  #   match "(*any)", to: redirect { |params, request|
+  #     "https://smallbets.com/#{params[:any]}#{request.query_string.present? ? '?' + request.query_string : ''}"
+  #   }, via: :all
+  # end
 
   constraints(lambda { |req| req.session[:user_id].present? }) do
     root to: "welcome#show"
