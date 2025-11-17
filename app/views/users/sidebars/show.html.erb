@@ -94,11 +94,11 @@
         <span class="sidebar__tool-label">Bookmarks</span>
       <% end %>
 
-      <%= link_to experts_path, class: "btn sidebar__tool" do %>
-        <%= image_tag "bulb.svg", size: 20, aria: { hidden: "true" } %>
-        <span class="for-screen-reader">Experts</span>
-        <span class="sidebar__tool-label">Experts</span>
-      <% end %>
+      <%# = link_to experts_path, class: "btn sidebar__tool" do %>
+        <%# image_tag "bulb.svg", size: 20, aria: { hidden: "true" } %>
+        <%# <span class="for-screen-reader">Experts</span> %>
+        <%# <span class="sidebar__tool-label">Experts</span> %>
+      <%# end %>
 
       <% if Current.user&.expert? || Current.user&.administrator? %>
         <%= link_to answers_inbox_path, class: "btn sidebar__tool" do %>
@@ -108,17 +108,17 @@
         <% end %>
       <% end %>
 
-      <%= link_to library_path, class: "btn sidebar__tool" do %>
-        <%= image_tag "library.svg", size: 20, aria: { hidden: "true" } %>
-        <span class="for-screen-reader">Library</span>
-        <span class="sidebar__tool-label">Library</span>
-      <% end %>
+      <%# = link_to library_path, class: "btn sidebar__tool" do %>
+        <%# image_tag "library.svg", size: 20, aria: { hidden: "true" } %>
+        <%# <span class="for-screen-reader">Library</span> %>
+        <%# <span class="sidebar__tool-label">Library</span> %>
+      <%# end %>
 
-      <%= link_to stats_path, class: "btn sidebar__tool" do %>
-        <%= image_tag "stats.svg", size: 20, aria: { hidden: "true" } %>
-        <span class="for-screen-reader">Stats</span>
-        <span class="sidebar__tool-label">Stats</span>
-      <% end %>
+      <%# = link_to stats_path, class: "btn sidebar__tool" do %>
+        <%# image_tag "stats.svg", size: 20, aria: { hidden: "true" } %>
+        <%# <span class="for-screen-reader">Stats</span> %>
+        <%# <span class="sidebar__tool-label">Stats</span> %>
+      <%# end %>
 
       <% if Current.user&.administrator? %>
         <%= link_to edit_account_path, class: "btn sidebar__tool" do %>
