@@ -14,15 +14,16 @@ class Expert
           name: "Dale Majors",
           expertise: [ "Entrepreneurship", "Goal Setting", "Business Development", "Bike Touring" ],
           twitter: "ventureanyway",
-          linkedin: "dalemajors"
+          linkedin: "dalemajors",
+          website: "https://www.ventureanyway.com/"
+        },
+        {
+          id: 2,
+          name: "Ryan Condie",
+          expertise: [ "Trail Running", "Burgers", "Adventures", "M&A"],
+          linkedin: "ryancondie",
+          website: "https://www.letsbuyabusiness.com/"
         }
-        # {
-        #   id: 2,
-        #   name: "Daniel Vassallo",
-        #   expertise: [ "Audience Building", "Communities", "Digital Products", "Marketing", "Gumroad" ],
-        #   twitter: "dvassallo",
-        #   linkedin: "danielvassallo"
-        # },
         # {
         #   id: 2844,
         #   name: "Krystian Zun",

@@ -26,7 +26,7 @@
         <p>What you choose to learn matters.</p>
         <p>Having purpose, meaning, and adventure in your life matters.</p>
         <p>
-          When you join Pando you&apos;ll find networks of people living life with intention.
+          When you join Pando you&apos;ll find networks of people living life with these intentions.
         </p>
       </div>
     </div>
@@ -140,7 +140,7 @@
         <% Expert.all.each do |expert| %>
           <div class="p-4 md:p-6 flex expert-card">
             <div class="flex-shrink-0 expert-avatar">
-              <%= image_tag "experts/#{expert[:name].split.first.downcase}_#{expert[:name].split.last.downcase}.jpg", class: "size-20 md:size-24 rounded-full object-cover", alt: expert[:name] %>
+              <%= image_tag "experts/#{expert[:name].split.first.downcase}_#{expert[:name].split.last.downcase}.jpg", class: "size-20 md:size-24 object-cover", alt: expert[:name], style: "border-radius: 100%" %>
             </div>
             <div class="flex-grow">
               <div class="flex items-center gap-2 mb-2">
@@ -155,6 +155,11 @@
                 <% if expert[:linkedin].present? %>
                   <a href="https://www.linkedin.com/in/<%= expert[:linkedin] %>" style="margin-top: 10px" target="_blank">
                     <%= image_tag "social/linkedin.svg", class: "w-5 h-5", alt: "LinkedIn" %>
+                  </a>
+                <% end %>
+                <% if expert[:website].present? %>
+                  <a href="<%= expert[:website] %>" style="margin-top: 10px" target="_blank">
+                    <%= image_tag "social/website.svg", class: "w-5 h-5", alt: "Website" %>
                   </a>
                 <% end %>
               </div>
